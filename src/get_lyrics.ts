@@ -1,7 +1,6 @@
 import { displayLyrics } from "./display_lyrics";
-//const title = document.getElementById('title-name') as HTMLInputElement | null;
-//const artist = document.getElementById('artist-name') as HTMLInputElement | null;
 
+//function for fetching data
 export async function getLyrics ()  {
     const title = document.getElementById('title-name') as HTMLInputElement | null;
     const artist = document.getElementById('artist-name') as HTMLInputElement | null;
@@ -19,7 +18,7 @@ export async function getLyrics ()  {
         const data = await response.json().then(data => displayLyrics(data.lyrics));
         console.log(data);
         return data;
-        //console.log(data[0]);
+        
     } catch (error) {
         if (error) {
             console.error("Error fetching song/artist name");

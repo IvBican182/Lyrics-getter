@@ -1,5 +1,5 @@
 
-
+//displaying lyrics function
 export function displayLyrics(data: string) {
     const lyrics = document.getElementById('lyrics') as HTMLInputElement;
     
@@ -8,7 +8,7 @@ export function displayLyrics(data: string) {
     if (!data) {
         lyrics.innerHTML = "Oops! Seems like we don't have that one yet :(";
     } else {
-        const showText = data.replace(/([A-Z]+)/g, " ,$1").replace(/,/g," <br />").split("/n");
+        const showText = data.replace(/([A-Z]+)/g, " ,$1").replace(/,/g," <br />").split("/n"); //break line on every capital letter
         const textHTML = `
           <p>${showText}</p>
     
