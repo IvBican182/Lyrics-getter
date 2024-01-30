@@ -1,4 +1,4 @@
-
+import { displayLyrics } from "./display_lyrics";
 //const title = document.getElementById('title-name') as HTMLInputElement | null;
 //const artist = document.getElementById('artist-name') as HTMLInputElement | null;
 
@@ -16,7 +16,7 @@ export async function getLyrics ()  {
 
     try {
         const response = await fetch(url);
-        const data = await response.json().then(data => data);
+        const data = await response.json().then(data => displayLyrics(data.lyrics));
         console.log(data);
         return data;
         //console.log(data[0]);
