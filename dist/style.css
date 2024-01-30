@@ -1,5 +1,5 @@
 body {
-    background: #5072A7;
+    background: #683c22;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@ body {
 }
 
 h1, h5 {
-    color: #fff;
+    color: #ffffffad;
     margin: 8px 0;
 }
 
@@ -24,6 +24,9 @@ h1, h5 {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
+    margin: 0 auto;
+    
+    
 }
 
 input {
@@ -36,8 +39,8 @@ input {
 }
 
 #lyrics {
-    display: flex;
-    /*height: 400px;*/
+    display:flex;
+    height: 100%;
     color: #fff;
     margin: 8px 0;
 
